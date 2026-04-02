@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Interview System - TTS & STT</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎤 AI Interview System</h1>
+            <p>Text-to-Speech & Speech-to-Text Powered Interview</p>
+        </header>
+
+        <!-- Upload Section -->
+        <div id="uploadSection" class="section active">
+            <div class="card">
+                <h2>Upload Your Resume</h2>
+                <div class="upload-area" id="uploadArea">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/>
+                    </svg>
+                    <p>Drop your resume here or click to browse</p>
+                    <input type="file" id="resumeFile" accept=".pdf,.docx,.txt" hidden>
+                    <button class="btn btn-primary" onclick="document.getElementById('resumeFile').click()">
+                        Select File
+                    </button>
+                </div>
+                <div id="uploadStatus" class="status-message"></div>
+            </div>
+        </div>
+
+        <!-- Resume Info Section -->
+        <div id="resumeInfoSection" class="section">
+            <div class="card">
+                <h2>Extracted Information</h2>
+                <div id="resumeInfo" class="resume-info"></div>
+                <button class="btn btn-success" onclick="startInterview()">Start Interview</button>
+            </div>
+        </div>
+
+        <!-- Interview Section -->
+        <div id="interviewSection" class="section">
+            <div class="interview-container">
+                <div class="conversation-area" id="conversationArea">
+                    <div class="message system-message">
+                        <div class="message-content">
+                            <strong>AI Interviewer:</strong>
+                            <p>Welcome to your interview! I'll ask you 5 questions. Listen carefully and answer when prompted.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <div class="question-progress">
+                        <span id="questionNumber">Question 1 of 5</span>
+                        <div class="progress-bar">
+                            <div id="progressFill" class="progress-fill"></div>
+                        </div>
+                    </div>
+
+                    <div class="audio-controls">
+                        <button id="recordBtn" class="btn btn-record" onclick="toggleRecording()">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/>
+                                <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
+                            </svg>
+                            <span id="recordText">Click to Answer</span>
+                        </button>
+                        
+                        <div id="recordingIndicator" class="recording-indicator">
+                            <div class="pulse"></div>
+                            <span>Recording...</span>
+                        </div>
+
+                        <button id="nextBtn" class="btn btn-secondary" onclick="nextQuestion()" style="display: none;">
+                            Next Question →
+                        </button>
+                    </div>
+
+                    <div id="transcriptArea" class="transcript-area" style="display: none;">
+                        <strong>Your Answer:</strong>
+                        <p id="transcriptText"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div id="resultsSection" class="section">
+            <div class="card">
+                <h2>Interview Complete! 🎉</h2>
+                <div id="resultsContent"></div>
+                <button class="btn btn-primary" onclick="location.reload()">Start New Interview</button>
+            </div>
+        </div>
+    </div>
+
+    <audio id="questionAudio" style="display: none;"></audio>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

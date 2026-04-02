@@ -1,0 +1,66 @@
+John Doe
+Software Developer
+Email: john.doe@email.com | Phone: (555) 123-4567
+LinkedIn: linkedin.com/in/johndoe | GitHub: github.com/johndoe
+
+PROFESSIONAL SUMMARY
+Experienced software developer with 5 years of experience in full-stack web development and machine learning applications. Passionate about building scalable applications and solving complex problems.
+
+SKILLS
+- Programming Languages: Python, JavaScript, TypeScript, Java
+- Web Technologies: React, Node.js, Express, FastAPI, Django
+- Databases: PostgreSQL, MongoDB, MySQL
+- Cloud & DevOps: AWS, Docker, Kubernetes, Git
+- Machine Learning: TensorFlow, PyTorch, Scikit-learn
+- Other: RESTful APIs, GraphQL, Microservices, Agile/Scrum
+
+EXPERIENCE
+Senior Software Developer | Tech Solutions Inc. | 2021 - Present
+- Developed and maintained full-stack web applications using React and Node.js
+- Implemented machine learning models for predictive analytics
+- Led a team of 4 developers in building a microservices architecture
+- Improved application performance by 40% through optimization
+
+Software Developer | Digital Innovations LLC | 2019 - 2021
+- Built RESTful APIs using Python and FastAPI
+- Integrated third-party services and payment gateways
+- Collaborated with cross-functional teams using Agile methodologies
+- Deployed applications on AWS using Docker containers
+
+EDUCATION
+Bachelor of Science in Computer Science
+University of Technology | 2015 - 2019
+GPA: 3.8/4.0
+
+CERTIFICATIONS
+- AWS Certified Solutions Architect - Associate
+- Microsoft Certified: Azure Fundamentals
+- Google Cloud Professional Data Engineer
+- Oracle Certified Professional, Java SE Programmer
+
+PROJECTS
+E-Commerce Platform
+- Built a full-stack e-commerce platform using React, Node.js, and MongoDB
+- Implemented secure payment processing and user authentication
+- Deployed on AWS with CI/CD pipeline
+
+AI Chatbot System
+- Developed an intelligent chatbot using Python and TensorFlow
+- Integrated natural language processing for better user interactions
+- Achieved 95% accuracy in intent recognition
+
+HOBBIES AND INTERESTS
+- Open Source Contribution: Active contributor to Python and JavaScript projects
+- Technical Blogging: Write articles about web development and machine learning
+- Photography: Landscape and nature photography enthusiast
+- Hiking: Regular weekend hiker exploring local trails
+- Gaming: Strategy games and puzzle solving
+
+LANGUAGES
+- English (Native)
+- Spanish (Intermediate)
+
+VOLUNTEER WORK
+Code Mentor | Tech for Good Foundation | 2020 - Present
+- Mentor junior developers and students learning programming
+- Conduct workshops on web development and career guidance

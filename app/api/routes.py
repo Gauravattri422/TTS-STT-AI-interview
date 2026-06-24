@@ -1,4 +1,3 @@
-"""API routes for the interview system"""
 from fastapi import APIRouter, File, UploadFile, HTTPException
 from fastapi.responses import FileResponse
 from app.models.schemas import QuestionRequest, TTSRequest, EvaluationRequest
